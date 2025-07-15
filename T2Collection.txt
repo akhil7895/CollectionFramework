@@ -1,0 +1,14 @@
+java.lang.Iterable
+        ↑
+  java.util.Collection
+        ↑
+-----------------------------
+|           |             |
+List        Set         Queue
+
+
+The Collection interface is the root interface of the Collection Framework (except for Map). It extends Iterable, so all collections can be iterated using:
+
+For-each loop
+Iterator
+All List, Set, and Queue interfaces extend Collection.

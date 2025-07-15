@@ -1,0 +1,42 @@
+A Map is a collection of key-value pairs where each key is unique, and each key maps to exactly one value. It is not a part of Collection hierarchy but related to it.
+
+🔑 Key Characteristics of Map:
+No duplicate keys (each key is unique)
+A key maps to a single value
+Supports operations like put(), get(), containsKey(), etc.
+No order guarantee (unless using LinkedHashMap or TreeMap)
+
+java.util.Map
+      |
+  -------------------------
+  |          |             |
+HashMap    LinkedHashMap  TreeMap
+  |
+  HashTable
+
+
+1. HashMap
+
+No order of keys (unordered)
+Fast operations (O(1) for get(), put())
+Allows one null key and multiple null values
+Not thread-safe
+
+2. LinkedHashMap
+
+Maintains insertion order
+Slower than HashMap due to extra overhead for maintaining order
+Allows one null key and multiple null values
+
+3. TreeMap
+
+Sorted by natural ordering of keys or a provided Comparator
+No null keys allowed (but allows null values)
+Slower than HashMap (due to sorting)
+Implements NavigableMap (providing operations like floorKey(), ceilingKey(), etc.)
+
+4. Hashtable (Legacy Class)
+
+Synchronized (thread-safe)
+Slower than HashMap
+Does not allow null keys or null values

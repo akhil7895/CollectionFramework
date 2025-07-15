@@ -1,0 +1,2 @@
+The iterable interface is the root interface for all the collection classes . It provides the single method :-
+            Iterator<T> iterator();

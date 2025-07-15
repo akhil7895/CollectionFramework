@@ -1,0 +1,37 @@
+Collection
+   |
+   └── Set
+         ├── HashSet
+         ├── LinkedHashSet
+         └── SortedSet (Interface)
+              └── NavigableSet (Interface)
+                   └── TreeSet
+
+
+The Set interface in Java is a collection that does not allow duplicate elements. It models the mathematical "set" abstraction.
+
+🔑 Key Characteristics:
+No duplicates allowed
+At most one null (depends on implementation)
+Some sets are unordered, others maintain order
+
+Set<String> set = new HashSet<>();
+
+1. ✅ HashSet
+No duplicates
+Unordered
+Allows one null
+Backed by a hash table
+Fast performance (O(1) for add, remove, contains)
+
+2. ✅ LinkedHashSet
+No duplicates
+Maintains insertion order
+Slightly slower than HashSet
+
+3. ✅ TreeSet
+No duplicates
+Sorted in natural order or by custom comparator
+No null allowed (throws NullPointerException)
+Backed by Red-Black Tree
+Implements NavigableSet

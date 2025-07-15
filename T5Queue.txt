@@ -1,0 +1,12 @@
+A Queue is a collection used to hold multiple elements prior to processing. It follows the FIFO (First-In-First-Out) principle.
+
+
+🔑 Key Characteristics of Queue:
+Elements are added at the rear (tail).
+Elements are removed from the front (head).
+Used in task scheduling, buffering, producer-consumer scenarios.
+
+Collection
+   |
+   └── Queue
+         └── Deque (extends Queue)

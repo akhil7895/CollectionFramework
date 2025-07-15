@@ -1,0 +1,15 @@
+The List interface is a subinterface of Collection that:
+
+        Maintains insertion order
+        Allows duplicate elements
+        Allows indexed access
+
+List<String> list = new ArrayList<>();
+
+📘 1. ArrayList
+
+🔹 Characteristics:
+Backed by a dynamic array
+Fast for read/access
+Slow for insert/delete in middle
+Not synchronized (use Collections.synchronizedList() for thread safety)
